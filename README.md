@@ -1,29 +1,29 @@
-# Foundation Compass Template
+# Cornerstone
 
-The easiest way to get started with Foundation + Compass.
+A WordPress theme based on Roots and ZURB's Foundation 5
 
-## Requirements
+## To Install
 
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [bower](http://bower.io): `npm install bower -g`
+Upload cornerstone to wp-content/themes and activate.
 
-## Quickstart
+## Features
 
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-  
-Then when you're working on your project, just run the following command:
+Cornerstone at this stage is slightly opinionated. This will be improved in the future.
 
-```bash
-compass watch
-```
+Support for the following plugins is enabled by default:
 
-## Upgrading
+* WooThemes Features
+* WooThemes Testimonials
+* Gravity Forms
+* WooCommerce (coming soon)
+* Redux Framework
 
-If you'd like to upgrade to a newer version of Foundation down the road just run:
+Cornerstone comes with two styles of the Orbit slider in widget form. Simply add them to the Home Page widget area. The two styles are content-width (conforms to grid) and container-with (fills container).
 
-```bash
-bower update
-```
+Theme integrates the following projects:
+
+* Roots
+* ZURB Foundation
+* Redux Framework (plugin version)
+
+Thanks to ZURB for making such an awesome framework.
