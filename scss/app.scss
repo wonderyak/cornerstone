@@ -1,31 +1,48 @@
+/* Foundation */
+@import "default";
 @import "settings";
 @import "foundation";
 
+/* Cornerstone Implementation and Modules */
+@import "cornerstone";
 
-header {
-  @include grid-row;
+/* Icon Fonts -- SET PATH IN BOWER COMPONENT */
+@import "../bower_components/foundation-icon-fonts/foundation-icons";
+
+/* WordPress Required Classes */
+@import "wordpress";
+
+/* Plugin Integration */
+@import "plugins";
+
+/* Compass Utilities */
+@import "compass/utilities/general/hacks";
+
+
+// header {
+//   @include grid-row;
   
-  .logo  { @include grid-column($columns:3, $center:true); }
-  padding-bottom: em-calc(10px);
+//   .logo  { @include grid-column($columns:3, $center:true); }
+//   padding-bottom: em-calc(10px);
 
-}
+// }
 
 
-.main-content {
-  @include grid-row;
+// .main-content {
+//   @include grid-row;
   
-  aside  {
-    @include grid-column($columns:6);
-    // @media #{$medium-up} {
-    //   @include grid-column($columns:3);
-    // }
-  }
+//   aside  {
+//     @include grid-column($columns:6);
+//     // @media #{$medium-up} {
+//     //   @include grid-column($columns:3);
+//     // }
+//   }
   
-  article  {
-    @include grid-column($columns:6);
-    // @media #{$medium-up} {
-    //   @include grid-column($columns:8, $offset: 1);
-    // }
-  }
+//   article  {
+//     @include grid-column($columns:6);
+//     // @media #{$medium-up} {
+//     //   @include grid-column($columns:8, $offset: 1);
+//     // }
+//   }
 
-}
+// }

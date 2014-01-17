@@ -1,0 +1,43 @@
+// WordPress required styles
+
+.wp-caption {
+	margin: .5em;
+	padding: 5px; 
+	border: solid 1px $primary-color; 
+	background: $secondary-color; 
+	font-size:90%; 
+	color: $primary-color; 
+	max-width:100%;
+}
+
+.wp-caption-text {}
+
+.sticky {}
+
+.gallery-caption {}
+
+.bypostauthor {}
+
+.alignright {
+	@extend .right;
+}
+
+img.alignright {
+	@extend .right;
+	margin: 0 1em 1em 0;
+}
+
+.alignleft {
+	@extend .left;
+}
+
+img.alignleft {
+	@extend .left;
+	margin: 0 1em 1em 0;
+}
+
+.aligncenter {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}

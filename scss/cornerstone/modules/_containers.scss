@@ -1,0 +1,15 @@
+.head-container {
+	background-color: scale-lightness($secondary-color, 30%);
+}
+
+.home-container {
+	background-color: scale-lightness($primary-color, 80%);
+}
+
+.main-container {
+	background-color: white;
+}
+
+.foot-container {
+	background-color: scale-lightness($secondary-color, 30%);
+}

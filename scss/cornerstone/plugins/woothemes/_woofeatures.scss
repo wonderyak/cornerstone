@@ -1,0 +1,24 @@
+// Woo Features 
+
+.woo-feature-section {
+    padding: 1em 0;
+}
+
+.features {
+  @include grid-row();
+	.feature {
+    	@media #{$small-only} {
+            @include grid-column(12);
+    	}
+    	@media #{$medium-only} {
+            @include grid-column(4);
+    	}
+    	@media #{$large-only} {
+            @include grid-column(4);
+    	}
+	}
+}
+
+h3.feature-title {
+    color:$primary-color;
+}

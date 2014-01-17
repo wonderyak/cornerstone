@@ -1,0 +1,50 @@
+// We use these as default colors throughout
+
+
+// Sage
+$primary-color: #36403E;
+$secondary-color: #BFBFAA;
+$tertiary-color: #F2F2E4;
+$alert-color: #f04124;
+$success-color: #43AC6A;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
+$off-white-color:#F2F2E4;
+
+// Blue
+// $primary-color: #36403E;
+// $secondary-color: #BFBFAA;
+// $tertiary-color: #F2F2E4;
+// $alert-color: #f04124;
+// $success-color: #43AC6A;
+// $warning-color: #f08a24;
+// $info-color: #a0d3e8;
+// $off-white-color:#F2F2E4;
+
+
+// Green
+// $primary-color: #36403E;
+// $secondary-color: #BFBFAA;
+// $tertiary-color: #F2F2E4;
+// $alert-color: #f04124;
+// $success-color: #43AC6A;
+// $warning-color: #f08a24;
+// $info-color: #a0d3e8;
+// $off-white-color:#F2F2E4;
+
+// Top Bar Settings
+
+
+
+
+// Orbit Settings
+
+// We use these to control the caption styles
+$orbit-container-bg: none;
+$orbit-caption-bg: scale-lightness($secondary-color, 30%);
+$orbit-caption-font-color: complement($secondary-color);
+$orbit-caption-position: "under"; // Supported values: "bottom", "under"
+
+// Graceful Loading Wrapper and preloader
+$wrapper-class: "slideshow-wrapper";
+$preloader-class: "preloader";

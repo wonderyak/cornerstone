@@ -1,0 +1,14 @@
+// Gravity Forms 
+
+.gform_fields {
+	margin: 0;
+	li {
+		list-style-type: none;
+	}
+}
+
+.gfield_required {
+	color: $warning-color;
+	font-weight: bold;
+	padding: 0 .25rem;
+}

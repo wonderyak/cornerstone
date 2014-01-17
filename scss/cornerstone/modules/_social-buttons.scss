@@ -1,0 +1,47 @@
+// Social
+
+// Social Links
+// These are the only hard coded values for colors -- done to standards and banding guidelines of the respective companies.
+
+.social-links {
+	padding-right:0;
+	&:last-child {
+		padding-right:0;
+	}
+}
+
+.social-links i {
+	font-size:1.6em;
+	padding:.3em .5em;
+	border-radius:50%;
+	margin:.25em;
+	float:right;
+	transition: all .4s;
+	&.fi-social-linkedin {
+		color:#fff;
+		background:opacify(#71c5ef, .5);
+	}
+	&.fi-social-twitter {
+		color:#fff;
+		background:opacify(#00aced, .5);
+	}
+	&.fi-social-google-plus {
+		color:#fff;
+		background:opacify(#dd4b39, .5);
+	}
+	&.fi-social-facebook {
+		color:#fff;
+		background:opacify(#3b5998, .5);
+	}
+	&.fi-social-youtube {
+		color:#fff;
+		background:opacify(#af2b26, .5);
+	}
+	&.fi-social-instagram {
+		color:#fff;
+		background:opacify(#517fa4, .5);
+	}
+	& i:hover {
+		opacity:1;
+	}
+}

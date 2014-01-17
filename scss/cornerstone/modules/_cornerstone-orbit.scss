@@ -1,0 +1,31 @@
+// 'Normal' Style Orbit
+
+.orbit-container.container-width {
+
+}
+.orbit-container.content-width {
+	background-color: $off-white-color;
+	//background-color: adjust-hue($primary-color, 180deg);
+}
+
+.content-width-orbit {
+	width:100%;
+}
+
+// 'Full Width' Style Orbit
+
+.container-width-orbit {
+	
+}
+
+.orbit-container > ul > li.active > img {
+	width:100%;
+}
+
+.orbit-caption {
+	background-color: $primary-color;
+	width:40%;
+	h1 {
+		color: complement($primary-color);
+	}
+}
