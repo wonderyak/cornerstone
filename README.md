@@ -2,6 +2,8 @@
 
 A WordPress theme based on Roots and ZURB's Foundation 5
 
+This Theme is not Production Ready.
+
 ## To Install
 
 Upload cornerstone to wp-content/themes and activate.
