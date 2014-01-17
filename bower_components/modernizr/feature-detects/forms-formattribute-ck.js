@@ -1,0 +1,3 @@
+// Detects whether input form="form_id" is available on the platform
+// E.g. IE 10 (and below), don't support this
+Modernizr.addTest("formattribute",function(){var e=document.createElement("form"),t=document.createElement("input"),n=document.createElement("div"),r="formtest"+(new Date).getTime(),i,s=!1;e.id=r;if(document.createAttribute){i=document.createAttribute("form");i.nodeValue=r;t.setAttributeNode(i);n.appendChild(e);n.appendChild(t);document.documentElement.appendChild(n);s=e.elements.length===1&&t.form==e;n.parentNode.removeChild(n)}return s});

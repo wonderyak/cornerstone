@@ -1,0 +1,2 @@
+// By @mathias, based on http://mths.be/axh
+Modernizr.addTest("details",function(){var e=document,t=e.createElement("details"),n,r,i;if("open"in t){r=e.body||function(){var t=e.documentElement;n=!0;return t.insertBefore(e.createElement("body"),t.firstElementChild||t.firstChild)}();t.innerHTML="<summary>a</summary>b";t.style.display="block";r.appendChild(t);i=t.offsetHeight;t.open=!0;i=i!=t.offsetHeight;r.removeChild(t);n&&r.parentNode.removeChild(r);return i}return!1});
