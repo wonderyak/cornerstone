@@ -1,4 +1,3 @@
-<?php get_template_part('inc/templates/page', 'header'); ?>
 <?php if ( is_active_sidebar( 'home-widget-area' ) ) : ?>
 	<?php dynamic_sidebar( 'home-widget-area' ); ?>
 <?php endif; ?>

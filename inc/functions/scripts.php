@@ -8,7 +8,7 @@ function cornerstone_load_styles()
   // (First the unique name for the style (custom-style) then the src, 
   // then dependencies and ver no. and media type)
   // register styles for stuff
-  wp_register_style( 'stylesheet', get_template_directory_uri() . '/stylesheets/app.css', array(), '0.0.1', 'screen' );   
+  wp_register_style( 'stylesheet', get_template_directory_uri() . '/stylesheets/app.css', array(), '0.0.3', 'screen' );   
   wp_enqueue_style('stylesheet');
 }
  

@@ -7432,6 +7432,20 @@ blockquote {
   border-left: 2px solid #36403e;
 }
 
+/* line 3, ../scss/cornerstone/modules/_headers.scss */
+.logo {
+  padding: .75em 0;
+}
+/* line 4, ../scss/cornerstone/modules/_headers.scss */
+.logo h1 {
+  line-height: 1em;
+}
+
+/* line 10, ../scss/cornerstone/modules/_headers.scss */
+.site-tagline {
+  margin-bottom: 0;
+}
+
 /* line 6, ../scss/cornerstone/modules/_cornerstone-orbit.scss */
 .orbit-container.content-width {
   background-color: #f2f2e4;
@@ -7469,7 +7483,7 @@ blockquote {
 
 /* line 6, ../scss/cornerstone/modules/_social-buttons.scss */
 .social-links {
-  padding-right: 0;
+  padding: .5em 0;
 }
 /* line 8, ../scss/cornerstone/modules/_social-buttons.scss */
 .social-links:last-child {

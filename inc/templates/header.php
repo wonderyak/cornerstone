@@ -37,6 +37,12 @@
 	</div>	<!-- ./ row -->
 	<div class="contain-to-grid">
 		<nav class="top-bar" role="navigation" data-topbar>
+			<ul class="title-area">
+	    	<li class="name">
+	      		
+	    	</li>
+	    	<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+			</ul>
 			<section class="top-bar-section">
 				<?php cornerstone_top_bar_l(); ?>
 				<?php cornerstone_top_bar_r(); ?>
