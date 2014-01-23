@@ -5,18 +5,36 @@
 }
 
 .features {
-  @include grid-row();
-	.feature {
-    	@media #{$small-only} {
-            @include grid-column(12);
+    padding: 1.25em 0;
+    &.columns-3 {
+        @include grid-row();
+    	.feature {
+        	@media #{$small-only} {
+                @include grid-column(12);
+        	}
+        	@media #{$medium-only} {
+                @include grid-column(4);
+        	}
+        	@media #{$large-only} {
+                @include grid-column(4);
+        	}
     	}
-    	@media #{$medium-only} {
-            @include grid-column(4);
-    	}
-    	@media #{$large-only} {
-            @include grid-column(4);
-    	}
-	}
+    }
+
+    &.columns-4{
+      @include grid-row();
+        .feature {
+            @media #{$small-only} {
+                @include grid-column(12);
+            }
+            @media #{$medium-only} {
+                @include grid-column(6);
+            }
+            @media #{$large-only} {
+                @include grid-column(3);
+            }
+        }
+    }  
 }
 
 h3.feature-title {

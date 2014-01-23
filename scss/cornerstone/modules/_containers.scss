@@ -7,9 +7,13 @@
 }
 
 .main-container {
-	background-color: white;
+	background-color: $white;
 }
 
 .foot-container {
 	background-color: scale-lightness($secondary-color, 30%);
+}
+
+.after-foot-container {
+	background-color: $white;
 }

@@ -123,7 +123,7 @@ if (!function_exists('redux_init')) :
 	$args['display_version'] = $theme->get('Version');
 
 	// If you want to use Google Webfonts, you MUST define the api key.
-	$args['google_api_key'] = 'AIzaSyAX_2L_UzCDPEnAHTG7zhESRVpMPS4ssII';
+	//$args['google_api_key'] = 'AIzaSyAX_2L_UzCDPEnAHTG7zhESRVpMPS4ssII';
 
 	// Define the starting tab for the option panel.
 	// Default: '0';
@@ -137,15 +137,15 @@ if (!function_exists('redux_init')) :
 
 	// Setup custom links in the footer for share icons
 	$args['share_icons']['twitter'] = array(
-	    'link' => 'http://twitter.com/ghost1227',
+	    'link' => 'http://twitter.com/awgrfx',
 	    'title' => 'Follow me on Twitter', 
 	    'img' => ReduxFramework::$_url . 'assets/img/social/Twitter.png'
 	);
-	$args['share_icons']['linked_in'] = array(
-	    'link' => 'http://www.linkedin.com/profile/view?id=52559281',
-	    'title' => 'Find me on LinkedIn', 
-	    'img' => ReduxFramework::$_url . 'assets/img/social/LinkedIn.png'
-	);
+	// $args['share_icons']['linked_in'] = array(
+	//     'link' => 'http://www.linkedin.com/profile/view?id=52559281',
+	//     'title' => 'Find me on LinkedIn', 
+	//     'img' => ReduxFramework::$_url . 'assets/img/social/LinkedIn.png'
+	// );
 
 	// Enable the import/export feature.
 	// Default: true
@@ -174,11 +174,11 @@ if (!function_exists('redux_init')) :
 
 	// Set a custom title for the options page.
 	// Default: Options
-	$args['menu_title'] = __('Options', 'redux-framework-demo');
+	$args['menu_title'] = __('Theme Settings', 'redux-framework-demo');
 
 	// Set a custom page title for the options page.
 	// Default: Options
-	$args['page_title'] = __('Options', 'redux-framework-demo');
+	$args['page_title'] = __('Cornerstone Settings', 'redux-framework-demo');
 
 	// Set a custom page slug for options page (wp-admin/themes.php?page=***).
 	// Default: redux_options
@@ -193,12 +193,12 @@ if (!function_exists('redux_init')) :
 
 	// Set the menu type. Set to "menu" for a top level menu, or "submenu" to add below an existing item.
 	// Default: menu
-	//$args['page_type'] = 'submenu';
+	$args['page_type'] = 'submenu';
 
 	// Set the parent menu.
 	// Default: themes.php
 	// A list of available parent menus is available at http://codex.wordpress.org/Function_Reference/add_submenu_page#Parameters
-	//$args['page_parent'] = 'options-general.php';
+	$args['page_parent'] = 'themes.php';
 
 	// Set a custom page location. This allows you to place your menu where you want in the menu order.
 	// Must be unique or it will override other items!
@@ -218,35 +218,35 @@ if (!function_exists('redux_init')) :
 	//$args['allow_sub_menu'] = false;
 	    
 	// Set ANY custom page help tabs, displayed using the new help tab API. Tabs are shown in order of definition.
-	$args['help_tabs'][] = array(
-	    'id' => 'redux-opts-1',
-	    'title' => __('Theme Information 1', 'redux-framework-demo'),
-	    'content' => __('<p>This is the tab content, HTML is allowed.</p>', 'redux-framework-demo')
-	);
-	$args['help_tabs'][] = array(
-	    'id' => 'redux-opts-2',
-	    'title' => __('Theme Information 2', 'redux-framework-demo'),
-	    'content' => __('<p>This is the tab content, HTML is allowed.</p>', 'redux-framework-demo')
-	);
+	// $args['help_tabs'][] = array(
+	//     'id' => 'redux-opts-1',
+	//     'title' => __('Theme Information 1', 'redux-framework-demo'),
+	//     'content' => __('<p>This is the tab content, HTML is allowed.</p>', 'redux-framework-demo')
+	// );
+	// $args['help_tabs'][] = array(
+	//     'id' => 'redux-opts-2',
+	//     'title' => __('Theme Information 2', 'redux-framework-demo'),
+	//     'content' => __('<p>This is the tab content, HTML is allowed.</p>', 'redux-framework-demo')
+	// );
 
 	// Set the help sidebar for the options page.                                        
-	$args['help_sidebar'] = __('<p>This is the sidebar content, HTML is allowed.</p>', 'redux-framework-demo');
+	//$args['help_sidebar'] = __('<p>This is the sidebar content, HTML is allowed.</p>', 'redux-framework-demo');
 
 
 	// Add HTML before the form.
-	if (!isset($args['global_variable']) || $args['global_variable'] !== false ) {
-		if (!empty($args['global_variable'])) {
-			$v = $args['global_variable'];
-		} else {
-			$v = str_replace("-", "_", $args['opt_name']);
-		}
-		$args['intro_text'] = sprintf( __('<p>Did you know that Redux sets a global variable for you? To access any of your saved options from within your code you can use your global variable: <strong>$%1$s</strong></p>', 'redux-framework-demo' ), $v );
-	} else {
-		$args['intro_text'] = __('<p>This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.</p>', 'redux-framework-demo');
-	}
+	// if (!isset($args['global_variable']) || $args['global_variable'] !== false ) {
+	// 	if (!empty($args['global_variable'])) {
+	// 		$v = $args['global_variable'];
+	// 	} else {
+	// 		$v = str_replace("-", "_", $args['opt_name']);
+	// 	}
+	// 	$args['intro_text'] = sprintf( __('<p>Did you know that Redux sets a global variable for you? To access any of your saved options from within your code you can use your global variable: <strong>$%1$s</strong></p>', 'redux-framework-demo' ), $v );
+	// } else {
+	// 	$args['intro_text'] = __('<p>This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.</p>', 'redux-framework-demo');
+	// }
 
-	// Add content after the form.
-	$args['footer_text'] = __('<p>This text is displayed below the options panel. It isn\'t required, but more info is always better! The footer_text field accepts all HTML.</p>', 'redux-framework-demo');
+	// // Add content after the form.
+	// $args['footer_text'] = __('<p>This text is displayed below the options panel. It isn\'t required, but more info is always better! The footer_text field accepts all HTML.</p>', 'redux-framework-demo');
 
 	// Set footer/credit line.
 	//$args['footer_credit'] = __('<p>This text is displayed in the options panel footer across from the WordPress version (where it normally says \'Thank you for creating with WordPress\'). This field accepts all HTML.</p>', 'redux-framework-demo');
@@ -278,7 +278,7 @@ if (!function_exists('redux_init')) :
 
 	$sections[] = array(
 		'title' => __('Home Settings', 'redux-framework-demo'),
-		'desc' => __('Redux Framework was created with the developer in mind. It allows for any theme developer to have an advanced theme panel with most of the features a developer would need. For more information check out the Github repo at: <a href="https://github.com/ReduxFramework/Redux-Framework">https://github.com/ReduxFramework/Redux-Framework</a>', 'redux-framework-demo'),
+		'desc' => __('Home Page Settings', 'redux-framework-demo'),
 		'icon' => 'el-icon-home',
 	    // 'submenu' => false, // Setting submenu to false on a given section will hide it from the WordPress sidebar menu!
 		'fields' => array(			
@@ -307,7 +307,7 @@ if (!function_exists('redux_init')) :
 	*/
 	$sections[] = array(
 		'icon' => 'el-icon-cogs',
-		'title' => __('General Settings', 'redux-framework-demo'),
+		'title' => __('Social Settings', 'redux-framework-demo'),
 		'fields' => array(
 			array(
 				'id'=>'cornerstone_facebook_url',

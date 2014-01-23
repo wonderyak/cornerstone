@@ -7422,6 +7422,11 @@ th.hide-for-touch {
   background-color: #d2d2c3;
 }
 
+/* line 17, ../scss/cornerstone/modules/_containers.scss */
+.after-foot-container {
+  background-color: white;
+}
+
 /* line 3, ../scss/cornerstone/modules/_content.scss */
 .content.row {
   padding: 2em 0;
@@ -9304,6 +9309,54 @@ img.alignleft {
   padding: 0 .25rem;
 }
 
+/*
+.gform_wrapper ul {
+  .list-unstyled();
+}
+.gform_wrapper li {
+  .form-group();
+}
+.gform_wrapper form {
+  margin-bottom: 0;
+}
+.gform_wrapper .gfield_required {
+  padding-left: 1px;
+  color: @state-danger-text;
+}
+.ginput_container input,
+.ginput_container select,
+.ginput_container textarea {
+  .form-control();
+}
+.ginput_container textarea {
+  height: auto;
+}
+.gform_button {
+  .btn();
+  .btn-primary();
+}
+.gform_wrapper .gfield_error {
+  .gfield_label {
+    color: @state-danger-text;
+  }
+  input,
+  select,
+  textarea {
+    border-color: @alert-danger-border;
+    background-color: @alert-danger-bg;
+    color: @alert-danger-text;
+    .form-control-focus(@alert-danger-text);
+  }
+}
+.validation_error {
+  .alert();
+  .alert-danger();
+}
+#gforms_confirmation_message {
+  .alert();
+  .alert-success();
+}
+*/
 /* line 3, ../scss/cornerstone/plugins/woothemes/_woofeatures.scss */
 .woo-feature-section {
   padding: 1em 0;
@@ -9311,6 +9364,10 @@ img.alignleft {
 
 /* line 7, ../scss/cornerstone/plugins/woothemes/_woofeatures.scss */
 .features {
+  padding: 1.25em 0;
+}
+/* line 9, ../scss/cornerstone/plugins/woothemes/_woofeatures.scss */
+.features.columns-3 {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -9320,17 +9377,17 @@ img.alignleft {
   *zoom: 1;
 }
 /* line 159, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.features:before, .features:after {
+.features.columns-3:before, .features.columns-3:after {
   content: " ";
   display: table;
 }
 /* line 160, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.features:after {
+.features.columns-3:after {
   clear: both;
 }
 @media only screen and (max-width: 40em) {
-  /* line 9, ../scss/cornerstone/plugins/woothemes/_woofeatures.scss */
-  .features .feature {
+  /* line 11, ../scss/cornerstone/plugins/woothemes/_woofeatures.scss */
+  .features.columns-3 .feature {
     position: relative;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -9339,8 +9396,8 @@ img.alignleft {
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 9, ../scss/cornerstone/plugins/woothemes/_woofeatures.scss */
-  .features .feature {
+  /* line 11, ../scss/cornerstone/plugins/woothemes/_woofeatures.scss */
+  .features.columns-3 .feature {
     position: relative;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -9349,8 +9406,8 @@ img.alignleft {
   }
 }
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
-  /* line 9, ../scss/cornerstone/plugins/woothemes/_woofeatures.scss */
-  .features .feature {
+  /* line 11, ../scss/cornerstone/plugins/woothemes/_woofeatures.scss */
+  .features.columns-3 .feature {
     position: relative;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -9358,8 +9415,57 @@ img.alignleft {
     float: left;
   }
 }
+/* line 24, ../scss/cornerstone/plugins/woothemes/_woofeatures.scss */
+.features.columns-4 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem;
+  *zoom: 1;
+}
+/* line 159, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.features.columns-4:before, .features.columns-4:after {
+  content: " ";
+  display: table;
+}
+/* line 160, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.features.columns-4:after {
+  clear: both;
+}
+@media only screen and (max-width: 40em) {
+  /* line 26, ../scss/cornerstone/plugins/woothemes/_woofeatures.scss */
+  .features.columns-4 .feature {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* line 26, ../scss/cornerstone/plugins/woothemes/_woofeatures.scss */
+  .features.columns-4 .feature {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+  }
+}
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  /* line 26, ../scss/cornerstone/plugins/woothemes/_woofeatures.scss */
+  .features.columns-4 .feature {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 25%;
+    float: left;
+  }
+}
 
-/* line 22, ../scss/cornerstone/plugins/woothemes/_woofeatures.scss */
+/* line 40, ../scss/cornerstone/plugins/woothemes/_woofeatures.scss */
 h3.feature-title {
   color: #36403e;
 }

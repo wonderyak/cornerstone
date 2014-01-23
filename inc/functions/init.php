@@ -12,6 +12,7 @@ if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'cornerstone-content-width-orbit', 970, 340, false ); // content width slider 
 	add_image_size( 'cornerstone-container-width-orbit', 2500, 765, false ); // container width slider 	 
 	add_image_size(	'page-featured-image', 1440, 500, true); // full width capability moderate height
+	add_image_size(	'woofeature-image', 300, 200, false); // Woo Features image
 	add_image_size( 'wc-category-image', 350, 350, false );
 	add_image_size( 'wc-single-image', 1440, 500, false );
 }
