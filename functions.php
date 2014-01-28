@@ -11,6 +11,7 @@ require_once locate_template('/inc/functions/foundation.php');		// foundation st
 require_once locate_template('/inc/functions/orbit.php');			// slider
 require_once locate_template('/inc/functions/gallery.php');			// gallery functions
 require_once locate_template('/inc/functions/widget-areas.php');	// available widgets
-require_once locate_template('/inc/functions/orbit-widgets.php');	// available widgets
+require_once locate_template('/inc/functions/orbit-widgets.php');	// widget for slider areas
+require_once locate_template('/inc/functions/callout-box.php');		// widget for callout box
 require_once locate_template('/inc/functions/sidebar.php');			// sidebar functions
 require_once locate_template('/inc/functions/helpers.php');			// helper functions

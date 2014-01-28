@@ -29,7 +29,7 @@ function widget($args, $instance) { ?>
 		<!-- the loop -->
 		<ul class="example-orbit content-width-orbit" data-orbit>
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-		    <?php get_template_part('inc/templates/content-width-slides'); ?>
+		    <?php get_template_part('inc/templates/orbit-slider'); ?>
 		<?php endwhile; ?>
 		</ul>
 		<!-- end of the loop -->
@@ -73,7 +73,7 @@ function widget($args, $instance) { ?>
 		<!-- the loop -->
 		<ul class="example-orbit container-width-orbit" data-orbit>
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-		    <?php get_template_part('inc/templates/container-width-slides'); ?>
+		    <?php get_template_part('inc/templates/orbit-slider'); ?>
 		<?php endwhile; ?>
 		</ul>
 		<!-- end of the loop -->

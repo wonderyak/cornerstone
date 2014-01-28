@@ -1,9 +1,9 @@
 <div class="wrap container foot-container">
     <?php get_template_part('inc/templates/footer-widget-area'); ?>
 </div>
-<div class="wrap container after-foot-container">    
+<div class="wrap container after-foot-container copyright-area">    
     <div class="row">
-        <div class="small-12 medium-6 large-6 columns copyright-area">
+        <div class="small-12 medium-6 large-6 columns">
             <p>Copyright &copy;<?php echo date("Y"); ?> <a href="<?php echo bloginfo( 'url' ); ?>"><?php echo bloginfo( 'name' ); ?></a></p>
         </div>
         <div class="small-12 medium-6 large-6 columns">
