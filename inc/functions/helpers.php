@@ -40,16 +40,16 @@ function catch_that_image($size = 'full') {
 // http://css-tricks.com/snippets/wordpress/detect-gists-and-embed-them
 // [gist id="ID" file="FILE"]
 function gist_shortcode($atts) {
-  return sprintf(
-    '<script src="https://gist.github.com/%s.js%s"></script>', 
-    $atts['id'], 
-    $atts['file'] ? '?file=' . $atts['file'] : ''
-  );
+	return sprintf(
+		'<script src="https://gist.github.com/%s.js%s"></script>', 
+		$atts['id'], 
+		$atts['file'] ? '?file=' . $atts['file'] : ''
+	);
 } add_shortcode('gist','gist_shortcode');
 
 // Remove this function if you don't want autoreplace gist links to shortcodes
 function gist_shortcode_filter($content) {
-  return preg_replace('/https:\/\/gist.github.com\/([\d]+)[\.js\?]*[\#]*file[=|_]+([\w\.]+)(?![^<]*<\/a>)/i', '[gist id="${1}" file="${2}"]', $content );
+	return preg_replace('/https:\/\/gist.github.com\/([\d]+)[\.js\?]*[\#]*file[=|_]+([\w\.]+)(?![^<]*<\/a>)/i', '[gist id="${1}" file="${2}"]', $content );
 } add_filter( 'the_content', 'gist_shortcode_filter', 9);
 
 
@@ -63,9 +63,7 @@ add_filter( 'wp_editor_set_quality', 'cornerstone_thumbnail_quality' );
  * Supports the new 'wp_editor_set_quality' filter added in WP 3.5.
  */
 function cornerstone_thumbnail_quality( $quality ) {
- 
-    return 100;
- 
+		return 100;
 }
 
 // remove p tags from shortcodes
@@ -75,8 +73,3 @@ add_filter( 'the_content', 'wpautop' , 99);
 add_filter( 'the_content', 'shortcode_unautop',100 );
 
 // Filter Read More link
-
-function cornerstone_excerpt( $more ) {
-	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">Read More</a>';
-}
-add_filter( 'cornerstone_excerpt', 'new_cornerstone_excerpt' );
