@@ -20,7 +20,7 @@ class cornerstone_callout_box extends WP_Widget {
             		<h4><?php echo $cornerstone_callout_body; ?></h4>
             	</div>
             	<div class="small-12 medium-4 large-4 columns">	
-					<a href="<?php echo $cornerstone_button_link;?>" class="button [radius round]"><?php echo $cornerstone_callout_button; ?></a>
+					<a href="<?php echo $cornerstone_button_link; ?>" class="button [radius round]"><?php echo $cornerstone_callout_button; ?></a>
 				</div>	
             </div>
         </section>    
@@ -41,15 +41,15 @@ class cornerstone_callout_box extends WP_Widget {
         ?>
         	<p>
                 <label for="<?php echo $this->get_field_id('cornerstone_callout_body'); ?>">Text for Box: </label>
-                <textarea class="widefat" id="<?php echo $this->get_field_id('cornerstone_callout_body'); ?>" name="<?php echo $this->get_field_name('cornerstone_callout_body'); ?>"><?php echo attribute_escape($cornerstone_callout_body); ?></textarea>
+                <textarea class="widefat" id="<?php echo $this->get_field_id('cornerstone_callout_body'); ?>" name="<?php echo $this->get_field_name('cornerstone_callout_body'); ?>"><?php echo esc_attr($cornerstone_callout_body); ?></textarea>
             </p>
             <p>
                 <label for="<?php echo $this->get_field_id('cornerstone_callout_button'); ?>">Button Text: </label>
-                <input class="widefat" id="<?php echo $this->get_field_id('cornerstone_callout_button'); ?>" name="<?php echo $this->get_field_name('cornerstone_callout_button'); ?>" type="text" value="<?php echo attribute_escape($cornerstone_callout_button); ?>" />
+                <input class="widefat" id="<?php echo $this->get_field_id('cornerstone_callout_button'); ?>" name="<?php echo $this->get_field_name('cornerstone_callout_button'); ?>" type="text" value="<?php echo esc_attr($cornerstone_callout_button); ?>" />
             </p>
             <p>
                 <label for="<?php echo $this->get_field_id('cornerstone_button_link'); ?>">Button URL: </label>
-                <input class="widefat" id="<?php echo $this->get_field_id('cornerstone_button_link'); ?>" name="<?php echo $this->get_field_name('cornerstone_button_link'); ?>" type="text" value="<?php echo attribute_escape($cornerstone_button_link); ?>" />
+                <input class="widefat" id="<?php echo $this->get_field_id('cornerstone_button_link'); ?>" name="<?php echo $this->get_field_name('cornerstone_button_link'); ?>" type="text" value="<?php echo esc_attr($cornerstone_button_link); ?>" />
             </p>
         <?php       
     }
